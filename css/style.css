@@ -1,0 +1,416 @@
+/* =========================================
+   Heritage Cuts Barbershop
+   Main External Stylesheet
+   ========================================= */
+
+
+/* Basic Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* General Page Styles */
+
+body {
+    background-color: #f5f1e8;
+    color: #2a2a2a;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.section-label {
+    color: #a77a35;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+}
+
+h3 {
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+
+/* Header */
+
+.site-header {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 18px 0;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #c69a52;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffffff;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+.main-nav a {
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #c69a52;
+}
+
+
+/* Buttons */
+
+.button {
+    background-color: #b58a45;
+    border: 2px solid #b58a45;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    padding: 11px 20px;
+}
+
+.button:hover {
+    background-color: #936d31;
+    border-color: #936d31;
+}
+
+.button-outline {
+    background-color: transparent;
+    border-color: #ffffff;
+    margin-left: 10px;
+}
+
+.button-outline:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #1d1d1d;
+}
+
+
+/* Hero Section */
+
+.hero {
+    align-items: center;
+    background-color: #282828;
+    color: #ffffff;
+    display: flex;
+    min-height: 600px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    max-width: 650px;
+}
+
+
+/* Introduction */
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 760px;
+}
+
+
+/* Section Heading */
+
+.section-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-heading p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+}
+
+
+/* Cards */
+
+.featured-services {
+    background-color: #ffffff;
+}
+
+.card-grid {
+    display: flex;
+    gap: 25px;
+}
+
+.service-card,
+.feature-card {
+    border: 1px solid #ded7ca;
+    padding: 30px;
+    width: 33.33%;
+}
+
+.service-card {
+    background-color: #f5f1e8;
+}
+
+.feature-card {
+    background-color: #ffffff;
+}
+
+.service-card:hover,
+.feature-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    color: #a77a35;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.center-button {
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+/* Why Choose Us */
+
+.why-us {
+    background-color: #ece5d8;
+}
+
+
+/* Opening Hours */
+
+.hours {
+    background-color: #ffffff;
+}
+
+.hours-container {
+    align-items: center;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+}
+
+.hours-container > div,
+.hours-container table {
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ded7ca;
+    padding: 14px;
+    text-align: left;
+}
+
+
+/* Call to Action */
+
+.call-to-action {
+    background-color: #b58a45;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.call-to-action .button {
+    background-color: #1d1d1d;
+    border-color: #1d1d1d;
+}
+
+
+/* Footer */
+
+.site-footer {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 55px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.footer-container > div {
+    width: 33.33%;
+}
+
+.site-footer h2,
+.site-footer h3 {
+    color: #c69a52;
+}
+
+.site-footer li {
+    margin-bottom: 8px;
+}
+
+.site-footer a:hover {
+    color: #c69a52;
+}
+
+address {
+    font-style: normal;
+}
+
+.copyright {
+    border-top: 1px solid #444444;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    text-align: center;
+    width: 90%;
+}
+
+
+/* Responsive Layout */
+
+@media screen and (max-width: 850px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .card-grid {
+        flex-direction: column;
+    }
+
+    .service-card,
+    .feature-card {
+        width: 100%;
+    }
+
+    .hours-container {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hours-container > div,
+    .hours-container table {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container > div {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-buttons .button {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        gap: 12px;
+    }
+}
