@@ -387,6 +387,20 @@ address {
     .footer-container > div {
         width: 100%;
     }
+
+
+        .two-column {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .two-column > div {
+        width: 100%;
+    }
+
+    .team-card {
+        width: 100%;
+    }
 }
 
 
@@ -413,4 +427,100 @@ address {
     .main-nav ul {
         gap: 12px;
     }
+}
+
+
+
+
+
+
+/* Page Banner */
+
+.page-banner {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    margin-bottom: 15px;
+}
+
+.page-banner p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+}
+
+
+/* Two-Column Layout */
+
+.two-column {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+}
+
+.two-column > div {
+    width: 50%;
+}
+
+
+/* About Page */
+
+.about-story {
+    background-color: #ffffff;
+}
+
+.image-placeholder {
+    align-items: center;
+    background-color: #ded7ca;
+    border: 2px dashed #a77a35;
+    color: #555555;
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    text-align: center;
+}
+
+.mission {
+    background-color: #ece5d8;
+}
+
+.values-list {
+    list-style: square;
+    margin-left: 22px;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+}
+
+
+/* Team Section */
+
+.team {
+    background-color: #ffffff;
+}
+
+.team-card {
+    border: 1px solid #ded7ca;
+    padding: 25px;
+    text-align: center;
+    width: 33.33%;
+}
+
+.team-image-placeholder {
+    align-items: center;
+    background-color: #ded7ca;
+    display: flex;
+    height: 220px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.team-role {
+    color: #a77a35;
+    font-weight: bold;
 }
