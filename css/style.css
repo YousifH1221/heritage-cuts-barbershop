@@ -555,6 +555,92 @@ address {
 
 
 
+
+
+
+
+/* Contact Page */
+
+.contact-section {
+    background-color: #ffffff;
+}
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+}
+
+.contact-information,
+.contact-form-area {
+    width: 50%;
+}
+
+.contact-detail {
+    border-bottom: 1px solid #ded7ca;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+}
+
+.contact-detail h3 {
+    color: #a77a35;
+}
+
+.contact-detail a:hover {
+    color: #a77a35;
+}
+
+
+/* Contact Form */
+
+.contact-form-area {
+    background-color: #f5f1e8;
+    padding: 35px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #b9b1a5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Contact Hours */
+
+.contact-hours {
+    background-color: #ece5d8;
+}
+
+.hours-table {
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.hours-note {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+
+
+
 /* Responsive Layout */
 
 @media screen and (max-width: 850px) {
@@ -624,6 +710,17 @@ address {
     }
 
         .news-card {
+        width: 100%;
+    }
+
+
+
+        .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-information,
+    .contact-form-area {
         width: 100%;
     }
 }
