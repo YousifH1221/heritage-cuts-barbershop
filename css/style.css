@@ -342,6 +342,76 @@ address {
 }
 
 
+
+
+
+/* Services Page */
+
+.services-intro {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services-intro > .container > p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 760px;
+}
+
+.services-page-note {
+    background-color: #f5f1e8;
+    margin-top: 25px;
+    padding: 18px;
+}
+
+.services-list {
+    background-color: #ece5d8;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.full-service-card {
+    background-color: #ffffff;
+    width: calc(33.33% - 17px);
+}
+
+.service-image-placeholder {
+    align-items: center;
+    background-color: #ded7ca;
+    color: #555555;
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.service-time {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.text-link {
+    color: #936d31;
+    font-weight: bold;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.service-information {
+    background-color: #ffffff;
+}
+
+
+
+
+
 /* Responsive Layout */
 
 @media screen and (max-width: 850px) {
@@ -401,7 +471,12 @@ address {
     .team-card {
         width: 100%;
     }
+
+        .full-service-card {
+        width: 100%;
+    }
 }
+
 
 
 @media screen and (max-width: 550px) {
