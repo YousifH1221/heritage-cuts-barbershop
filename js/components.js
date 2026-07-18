@@ -6,6 +6,7 @@ fetch("components/header.html")
     .then(function(headerContent) {
         document.getElementById("header-placeholder").innerHTML =
             headerContent;
+            setupThemeButton();
     })
     .catch(function(error) {
         console.log("The header could not be loaded.", error);

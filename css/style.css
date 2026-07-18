@@ -641,6 +641,103 @@ address {
 
 
 
+
+
+
+
+
+
+
+
+/* Theme Button */
+
+.theme-button {
+    background-color: transparent;
+    border: 1px solid #c69a52;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 14px;
+}
+
+.theme-button:hover {
+    background-color: #c69a52;
+    color: #1d1d1d;
+}
+
+
+/* Dark Theme */
+
+body.dark-theme {
+    background-color: #1d1d1d;
+    color: #f5f1e8;
+}
+
+.dark-theme .intro,
+.dark-theme .featured-services,
+.dark-theme .hours,
+.dark-theme .about-story,
+.dark-theme .team,
+.dark-theme .services-intro,
+.dark-theme .service-information,
+.dark-theme .gallery-intro,
+.dark-theme .news-intro,
+.dark-theme .news-message,
+.dark-theme .contact-section {
+    background-color: #292929;
+}
+
+.dark-theme .why-us,
+.dark-theme .mission,
+.dark-theme .services-list,
+.dark-theme .gallery-section,
+.dark-theme .news-section,
+.dark-theme .contact-hours {
+    background-color: #333333;
+}
+
+.dark-theme .service-card,
+.dark-theme .feature-card,
+.dark-theme .team-card,
+.dark-theme .gallery-card,
+.dark-theme .news-card,
+.dark-theme .contact-form-area,
+.dark-theme .services-page-note {
+    background-color: #3b3b3b;
+    border-color: #555555;
+}
+
+.dark-theme .image-placeholder,
+.dark-theme .team-image-placeholder,
+.dark-theme .service-image-placeholder,
+.dark-theme .gallery-image-placeholder,
+.dark-theme .news-image-placeholder {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+
+.dark-theme .service-time,
+.dark-theme .news-date {
+    color: #cccccc;
+}
+
+.dark-theme th,
+.dark-theme td,
+.dark-theme .contact-detail {
+    border-color: #555555;
+}
+
+.dark-theme input,
+.dark-theme textarea {
+    background-color: #292929;
+    border-color: #666666;
+    color: #ffffff;
+}
+
+
+
+
+
+
 /* Responsive Layout */
 
 @media screen and (max-width: 850px) {
@@ -724,6 +821,7 @@ address {
         width: 100%;
     }
 }
+
 
 
 
