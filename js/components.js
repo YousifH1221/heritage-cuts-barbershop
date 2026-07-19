@@ -1,18 +1,18 @@
 // Load the website header
 fetch("components/header.html")
-    .then(function(response) {
+    .then(function (response) {
         return response.text();
     })
-    .then(function(headerContent) {
+    .then(function (headerContent) {
         document.getElementById("header-placeholder").innerHTML =
             headerContent;
-            setupThemeButton();
+
+        setupThemeToggle();
     })
-    .catch(function(error) {
-        console.log("The header could not be loaded.", error);
+    .catch(function (error) {
+        console.log("Header error", error);
     });
-
-
+    
 // Load the website footer
 fetch("components/footer.html")
     .then(function(response) {

@@ -1,44 +1,58 @@
-// Apply the saved theme when the page opens
+document.addEventListener("DOMContentLoaded", function () {
+    loadSavedTheme();
+});
 
 
-const savedTheme = localStorage.getItem("theme");
+function applyTheme(theme) {
+    document.body.setAttribute("data-theme", theme);
 
-if (savedTheme === "dark") {
-    document.body.classList.add("dark-theme");
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    if (toggleBtn) {
+        toggleBtn.textContent =
+            theme === "dark"
+                ? "Switch to Light Mode"
+                : "Switch to Dark Mode";
+    }
+
+    localStorage.setItem("theme", theme);
 }
 
 
-// Set up the theme button after the header loads
-function setupThemeButton() {
-    const themeButton = document.getElementById("theme-button");
+function loadSavedTheme() {
+    const savedTheme = localStorage.getItem("theme");
 
-    if (themeButton === null) {
+    if (savedTheme) {
+        applyTheme(savedTheme);
+    } else {
+        applyTheme("light");
+    }
+}
+
+
+function setupThemeToggle() {
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    if (!toggleBtn) {
         return;
     }
 
-    updateThemeButtonText(themeButton);
+    const currentTheme =
+        document.body.getAttribute("data-theme") || "light";
 
-    themeButton.addEventListener("click", function() {
-        document.body.classList.toggle("dark-theme");
+    toggleBtn.textContent =
+        currentTheme === "dark"
+            ? "Switch to Light Mode"
+            : "Switch to Dark Mode";
 
-        if (document.body.classList.contains("dark-theme")) {
-            localStorage.setItem("theme", "dark");
+    toggleBtn.addEventListener("click", function () {
+        const currentTheme =
+            document.body.getAttribute("data-theme");
+
+        if (currentTheme === "dark") {
+            applyTheme("light");
         } else {
-            localStorage.setItem("theme", "light");
+            applyTheme("dark");
         }
-
-        updateThemeButtonText(themeButton);
     });
-}
-
-
-// Change the button text based on the current theme
-
-
-function updateThemeButtonText(themeButton) {
-    if (document.body.classList.contains("dark-theme")) {
-        themeButton.textContent = "Light Mode";
-    } else {
-        themeButton.textContent = "Dark Mode";
-    }
 }

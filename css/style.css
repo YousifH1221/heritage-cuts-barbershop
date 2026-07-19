@@ -13,11 +13,22 @@
 }
 
 
+:root {
+    --bg: #f5f1e8;
+    --text: #2a2a2a;
+}
+
+[data-theme="dark"] {
+    --bg: #1d1d1d;
+    --text: #f0f0f0;
+}
+
+
 /* General Page Styles */
 
 body {
-    background-color: #f5f1e8;
-    color: #2a2a2a;
+    background-color: var(--bg);
+color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
@@ -667,67 +678,64 @@ address {
 
 /* Dark Theme */
 
-body.dark-theme {
-    background-color: #1d1d1d;
-    color: #f5f1e8;
-}
 
-.dark-theme .intro,
-.dark-theme .featured-services,
-.dark-theme .hours,
-.dark-theme .about-story,
-.dark-theme .team,
-.dark-theme .services-intro,
-.dark-theme .service-information,
-.dark-theme .gallery-intro,
-.dark-theme .news-intro,
-.dark-theme .news-message,
-.dark-theme .contact-section {
+
+[data-theme="dark"] .intro,
+[data-theme="dark"] .featured-services,
+[data-theme="dark"] .hours,
+[data-theme="dark"] .about-story,
+[data-theme="dark"] .team,
+[data-theme="dark"] .services-intro,
+[data-theme="dark"] .service-information,
+[data-theme="dark"] .gallery-intro,
+[data-theme="dark"] .news-intro,
+[data-theme="dark"] .news-message,
+[data-theme="dark"] .contact-section {
     background-color: #292929;
 }
 
-.dark-theme .why-us,
-.dark-theme .mission,
-.dark-theme .services-list,
-.dark-theme .gallery-section,
-.dark-theme .news-section,
-.dark-theme .contact-hours {
+[data-theme="dark"] .why-us,
+[data-theme="dark"] .mission,
+[data-theme="dark"] .services-list,
+[data-theme="dark"] .gallery-section,
+[data-theme="dark"] .news-section,
+[data-theme="dark"] .contact-hours {
     background-color: #333333;
 }
 
-.dark-theme .service-card,
-.dark-theme .feature-card,
-.dark-theme .team-card,
-.dark-theme .gallery-card,
-.dark-theme .news-card,
-.dark-theme .contact-form-area,
-.dark-theme .services-page-note {
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .team-card,
+[data-theme="dark"] .gallery-card,
+[data-theme="dark"] .news-card,
+[data-theme="dark"] .contact-form-area,
+[data-theme="dark"] .services-page-note {
     background-color: #3b3b3b;
     border-color: #555555;
 }
 
-.dark-theme .image-placeholder,
-.dark-theme .team-image-placeholder,
-.dark-theme .service-image-placeholder,
-.dark-theme .gallery-image-placeholder,
-.dark-theme .news-image-placeholder {
+[data-theme="dark"] .image-placeholder,
+[data-theme="dark"] .team-image-placeholder,
+[data-theme="dark"] .service-image-placeholder,
+[data-theme="dark"] .gallery-image-placeholder,
+[data-theme="dark"] .news-image-placeholder {
     background-color: #4a4a4a;
     color: #ffffff;
 }
 
-.dark-theme .service-time,
-.dark-theme .news-date {
+[data-theme="dark"] .service-time,
+[data-theme="dark"] .news-date {
     color: #cccccc;
 }
 
-.dark-theme th,
-.dark-theme td,
-.dark-theme .contact-detail {
+[data-theme="dark"] th,
+[data-theme="dark"] td,
+[data-theme="dark"] .contact-detail {
     border-color: #555555;
 }
 
-.dark-theme input,
-.dark-theme textarea {
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
     background-color: #292929;
     border-color: #666666;
     color: #ffffff;
