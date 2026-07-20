@@ -742,6 +742,68 @@ address {
 }
 
 
+[data-theme="dark"] .post-card {
+    background-color: #3b3b3b;
+    border-color: #555555;
+}
+
+[data-theme="dark"] .post-meta {
+    color: #cccccc;
+}
+
+
+/* Blog */
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.post-card {
+    background-color: #ffffff;
+    border: 1px solid #ded7ca;
+    padding: 25px;
+    width: calc(33.33% - 17px);
+}
+
+.post-card h2 {
+    font-size: 1.5rem;
+}
+
+.post-meta {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.latest-badge {
+    background-color: #b58a45;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding: 5px 9px;
+}
+
+.read-more-button {
+    background-color: #b58a45;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 9px 14px;
+}
+
+.read-more-button:hover {
+    background-color: #936d31;
+}
+
+.post-content {
+    display: none;
+    margin-top: 15px;
+}
+
 
 
 
@@ -830,6 +892,11 @@ address {
     }
 }
 
+
+
+    .post-card {
+        width: 100%;
+    }
 
 
 

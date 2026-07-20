@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Our New Branch Is Now Open",
+        "date": "2026-07-20",
+        "summary": "Heritage Cuts has opened a new branch to serve more customers across Toronto.",
+        "category": "Shop News",
+        "content": "The new Heritage Cuts branch is now open and welcoming customers. The location offers the same professional haircuts, beard grooming, and traditional barbering services available at our original shop."
+    },
+    {
+        "id": 2,
+        "title": "Special Offer for Students",
+        "date": "2026-07-18",
+        "summary": "Students can now receive special pricing on selected services at Heritage Cuts.",
+        "category": "Special Offer",
+        "content": "Students can visit Heritage Cuts and present a valid student identification card to receive special pricing on selected haircuts and grooming services. Contact the shop for more information about the offer."
+    },
+    {
+        "id": 3,
+        "title": "New Extended Business Hours",
+        "date": "2026-07-01",
+        "summary": "Heritage Cuts is now open from 9:00 a.m. until 8:00 p.m.",
+        "category": "Shop Update",
+        "content": "Our previous operating hours were from 10:00 a.m. to 4:00 p.m. The new extended hours of 9:00 a.m. to 8:00 p.m. give customers more time to visit the shop and schedule their grooming services."
+    }
+]
