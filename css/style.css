@@ -756,6 +756,12 @@ address {
     color: #ffffff;
 }
 
+[data-theme="dark"] .filter-area input {
+    background-color: #292929;
+    border-color: #666666;
+    color: #ffffff;
+}
+
 
 /* Blog */
 

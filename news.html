@@ -55,10 +55,25 @@
             </div>
         </section>
 
-        <!-- News Articles -->
         <section class="news-section section">
     <div class="container">
+
+        <div class="filter-area">
+            <label for="filter-input">Search news</label>
+
+            <input
+                type="search"
+                id="filter-input"
+                placeholder="Search by title or category"
+            >
+
+            <p id="no-results" class="no-results">
+                No results found.
+            </p>
+        </div>
+
         <div id="blog-list" class="blog-list"></div>
+
     </div>
 </section>
 
@@ -107,6 +122,7 @@
     <script src="js/theme.js"></script>
 <script src="js/components.js"></script>
 <script src="js/blog.js"></script>
+<script src="js/filter.js"></script>
 
 </body>
 </html>

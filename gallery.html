@@ -59,9 +59,24 @@
 <section class="gallery-section section">
     <div class="container">
 
+
+        <div class="filter-area">
+    <label for="filter-input">Search styles</label>
+
+    <input
+        type="search"
+        id="filter-input"
+        placeholder="Search by style or category"
+    >
+
+    <p id="no-results" class="no-results">
+        No results found.
+    </p>
+</div>
+
         <div class="gallery-grid">
 
-            <article class="gallery-card">
+            <article class="gallery-card project-card">
                 <div class="gallery-image">
                     <img
                         src="images/LowFade.png"
@@ -70,10 +85,10 @@
                 </div>
 
                 <div class="gallery-card-content">
-                    <p class="gallery-category">Fade</p>
-                    <h3>Low Fade</h3>
+                    <p class="gallery-category card-category">Fade</p>
+                    <h3 class="card-title">Low Fade</h3>
 
-                    <p>
+                    <p class="card-description">
                         A subtle fade that begins lower on the sides
                         for a clean and professional look.
                     </p>
@@ -93,10 +108,10 @@
                 </div>
 
                 <div class="gallery-card-content">
-                    <p class="gallery-category">Fade</p>
-                    <h3>Mid Fade</h3>
+                    <p class="gallery-category card-category">Fade</p>
+                    <h3 class="card-title">Mid Fade</h3>
 
-                    <p>
+                    <p class="card-description">
                         A balanced fade that creates a sharp transition
                         between the sides and the top.
                     </p>
@@ -107,7 +122,7 @@
                 </div>
             </article>
 
-            <article class="gallery-card">
+           <article class="gallery-card project-card">
                 <div class="gallery-image">
                     <img
                         src="images/SkinFade2.png"
@@ -116,10 +131,10 @@
                 </div>
 
                 <div class="gallery-card-content">
-                    <p class="gallery-category">Fade</p>
-                    <h3>Skin Fade</h3>
+                    <p class="gallery-category card-category">Fade</p>
+                    <h3 class="card-title">Skin Fade</h3>
 
-                    <p>
+                    <p class="card-description">
                         A close fade that blends smoothly into the skin
                         for a fresh and modern finish.
                     </p>
@@ -130,7 +145,7 @@
                 </div>
             </article>
 
-            <article class="gallery-card">
+           <article class="gallery-card project-card">
                 <div class="gallery-image">
                     <img
                         src="images/ClassicTaper.png"
@@ -139,10 +154,10 @@
                 </div>
 
                 <div class="gallery-card-content">
-                    <p class="gallery-category">Classic</p>
-                    <h3>Classic Taper</h3>
+                    <p class="gallery-category card-category">Classic</p>
+                    <h3 class="card-title">Classic Taper</h3>
 
-                    <p>
+                    <p class="card-description">
                         A traditional haircut with a gradual reduction
                         in length around the sides and neckline.
                     </p>
@@ -153,7 +168,7 @@
                 </div>
             </article>
 
-            <article class="gallery-card">
+           <article class="gallery-card project-card">
                 <div class="gallery-image">
                     <img
                         src="images/TexturedCrop.png"
@@ -162,10 +177,10 @@
                 </div>
 
                 <div class="gallery-card-content">
-                    <p class="gallery-category">Modern</p>
-                    <h3>Textured Crop</h3>
+                    <p class="gallery-category card-category">Modern</p>
+                    <h3 class="card-title">Textured Crop</h3>
 
-                    <p>
+                    <p class="card-description">
                         A short modern style that uses texture on top
                         for a natural and easy-to-manage finish.
                     </p>
@@ -176,7 +191,7 @@
                 </div>
             </article>
 
-            <article class="gallery-card">
+           <article class="gallery-card project-card">
                 <div class="gallery-image">
                     <img
                         src="images/BeardShapeUp.png"
@@ -185,10 +200,10 @@
                 </div>
 
                 <div class="gallery-card-content">
-                    <p class="gallery-category">Beard</p>
-                    <h3>Beard Shape-Up</h3>
+                    <p class="gallery-category card-category">Beard</p>
+                    <h3 class="card-title">Beard Shape-Up</h3>
 
-                    <p>
+                   <p class="card-description">
                         Clean beard lines and careful shaping for a
                         neat and balanced appearance.
                     </p>
@@ -228,6 +243,6 @@
 
     <div id="footer-placeholder"></div>
     <script src="js/components.js"></script>
-
+    <script src="js/filter.js"></script>
 </body>
 </html>

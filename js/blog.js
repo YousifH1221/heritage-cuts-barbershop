@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             posts.forEach((post, index) => {
                 const postElement = document.createElement("div");
-                postElement.classList.add("post-card");
+                postElement.classList.add("post-card", "project-card");
 
                 const postDate = new Date(post.date + "T00:00:00");
 
@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 postElement.innerHTML = `
                     ${latestPost}
 
-                    <h2>${post.title}</h2>
+                    <h2 class="card-title">${post.title}</h2>
 
                     <p class="post-meta">
-                        ${formattedDate} | ${post.category}
+                        ${formattedDate} | <span class="card-category">${post.category}</span>
                     </p>
 
-                    <p>${post.summary}</p>
+                    <p class="card-description">${post.summary}</p>
 
                     <button class="read-more-button">
                         Read More
