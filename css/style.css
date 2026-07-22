@@ -356,7 +356,7 @@ address {
 
 
 
-/* Services Page */
+/* Services */
 
 .services-intro {
     background-color: #ffffff;
@@ -387,18 +387,20 @@ address {
 
 .full-service-card {
     background-color: #ffffff;
-    width: calc(33.33% - 17px);
+    width: calc((100% - 50px) / 3);
 }
 
-.service-image-placeholder {
-    align-items: center;
-    background-color: #ded7ca;
-    color: #555555;
-    display: flex;
+.service-image {
     height: 180px;
-    justify-content: center;
     margin-bottom: 22px;
-    text-align: center;
+    overflow: hidden;
+}
+
+.service-image img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .service-time {
@@ -418,9 +420,6 @@ address {
 .service-information {
     background-color: #ffffff;
 }
-
-
-
 
 
 
@@ -751,6 +750,12 @@ address {
     color: #cccccc;
 }
 
+[data-theme="dark"] .success-message {
+    background-color: #294029;
+    border-color: #7aab7a;
+    color: #ffffff;
+}
+
 
 /* Blog */
 
@@ -805,6 +810,25 @@ address {
 }
 
 
+
+
+/* Form messages */
+
+.error-msg {
+    color: #b00020;
+    display: none;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.success-message {
+    background-color: #e5f4e5;
+    border: 1px solid #5d8a5d;
+    color: #244f24;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
 
 
 
